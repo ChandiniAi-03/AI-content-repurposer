@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AI Content Repurposer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- ==========================================
+         NAVBAR
+    =========================================== -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">✦</span>
+            AI Content Repurposer
+        </div>
+
+
+        <div class="nav-links">
+
+            <a href="#home">Home</a>
+
+            <a href="#features">Features</a>
+
+            <a href="#how-it-works">How It Works</a>
+
+            <a href="#resultsSection">Results</a>
+
+        </div>
+
+
+        <div class="nav-badge">
+            ✨ AI Powered
+        </div>
+
+    </nav>
+
+
+
+    <!-- ==========================================
+         MAIN
+    =========================================== -->
+
+    <main class="container" id="home">
+
+
+        <!-- ======================================
+             HERO SECTION
+        ======================================= -->
+
+        <section class="hero">
+
+            <div class="hero-badge">
+                ✦ AI Powered
+                <span>•</span>
+                Faster
+                <span>•</span>
+                Smarter
+            </div>
+
+
+            <h1>
+                Turn One Article Into
+                <span>Multiple Social Media Posts</span>
+            </h1>
+
+
+            <p class="hero-description">
+
+                Transform your article into platform-ready
+                content with AI. Save time, stay consistent,
+                and reach more people.
+
+            </p>
+
+
+            <!-- ==================================
+                 URL GENERATOR
+            =================================== -->
+
+            <div class="input-section">
+
+                <label for="url">
+                    🔗 Article URL
+                </label>
+
+
+                <div class="input-row">
+
+                    <input
+                        type="url"
+                        id="url"
+                        placeholder="https://example.com/your-article"
+                    >
+
+
+                    <button id="scrapeBtn">
+
+                        ✨ Repurpose Content
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==================================
+                 STATUS
+            =================================== -->
+
+            <div id="status"></div>
+
+
+            <!-- ==================================
+                 AI LOADER
+            =================================== -->
+
+            <div id="loader" class="hidden">
+
+                <div class="loader-orbit">
+
+                    <div class="loader-core">
+                        ✦
+                    </div>
+
+                </div>
+
+
+                <p>
+                    🤖 AI is creating your content...
+                </p>
+
+
+                <span>
+                    Analyzing your article and optimizing
+                    it for each platform ✨
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             FEATURES
+        ======================================= -->
+
+        <section
+            class="features-section"
+            id="features"
+        >
+
+            <div class="section-heading">
+
+                <span>
+                    WHY USE IT?
+                </span>
+
+                <h2>
+                    One Article.
+                    <span>Multiple Possibilities.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon purple">
+                        ⚡
+                    </div>
+
+                    <h3>
+                        Fast Repurposing
+                    </h3>
+
+                    <p>
+                        Turn a single article into
+                        multiple social-media formats
+                        in seconds.
+                    </p>
+
+                </div>
+
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon blue">
+                        🤖
+                    </div>
+
+                    <h3>
+                        AI Powered
+                    </h3>
+
+                    <p>
+                        Generate engaging,
+                        platform-specific content
+                        automatically.
+                    </p>
+
+                </div>
+
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon pink">
+                        📄
+                    </div>
+
+                    <h3>
+                        Ready to Export
+                    </h3>
+
+                    <p>
+                        Copy your content instantly
+                        or download everything as a
+                        Word document.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             HOW IT WORKS
+        ======================================= -->
+
+        <section
+            class="how-section"
+            id="how-it-works"
+        >
+
+            <div class="section-heading">
+
+                <span>
+                    SIMPLE WORKFLOW
+                </span>
+
+                <h2>
+                    How It <span>Works</span>
+                </h2>
+
+            </div>
+
+
+            <div class="steps">
+
+                <div class="step">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Paste your URL
+                        </h3>
+
+                        <p>
+                            Enter the link to any
+                            accessible article.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            AI analyzes it
+                        </h3>
+
+                        <p>
+                            The article is extracted
+                            and processed using AI.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Get your content
+                        </h3>
+
+                        <p>
+                            Receive ready-to-use
+                            social-media posts.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             EXTRACTED ARTICLE
+        ======================================= -->
+
+        <section
+            id="articleSection"
+            class="hidden content-section"
+        >
+
+            <div class="section-title-row">
+
+                <h2>
+                    📝 Extracted Article
+                </h2>
+
+                <span class="section-tag">
+                    SOURCE
+                </span>
+
+            </div>
+
+
+            <div id="articleContent"></div>
+
+        </section>
+
+
+
+        <!-- ======================================
+             AI RESULTS
+        ======================================= -->
+
+        <section
+            id="resultsSection"
+            class="hidden results-section"
+        >
+
+            <div class="section-heading">
+
+                <span>
+                    YOUR CONTENT
+                </span>
+
+                <h2>
+                    ✨ AI Generated
+                    <span>Content</span>
+                </h2>
+
+            </div>
+
+
+
+            <!-- TWITTER -->
+
+            <div class="result-card twitter-card">
+
+                <div class="card-header">
+
+                    <div class="platform-title">
+
+                        <div class="platform-icon twitter-icon">
+                            𝕏
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Twitter / X Thread
+                            </h3>
+
+                            <span>
+                                5-post thread
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="copy-btn"
+                        data-target="twitterContent"
+                    >
+                        📋 Copy
+                    </button>
+
+                </div>
+
+
+                <div id="twitterContent"></div>
+
+            </div>
+
+
+
+            <!-- LINKEDIN -->
+
+            <div class="result-card linkedin-card">
+
+                <div class="card-header">
+
+                    <div class="platform-title">
+
+                        <div class="platform-icon linkedin-icon">
+                            in
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                LinkedIn Post
+                            </h3>
+
+                            <span>
+                                Professional content
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="copy-btn"
+                        data-target="linkedinContent"
+                    >
+                        📋 Copy
+                    </button>
+
+                </div>
+
+
+                <div id="linkedinContent"></div>
+
+            </div>
+
+
+
+            <!-- INSTAGRAM -->
+
+            <div class="result-card instagram-card">
+
+                <div class="card-header">
+
+                    <div class="platform-title">
+
+                        <div class="platform-icon instagram-icon">
+                            ◎
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Instagram Caption
+                            </h3>
+
+                            <span>
+                                Engaging caption + hashtags
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="copy-btn"
+                        data-target="instagramContent"
+                    >
+                        📋 Copy
+                    </button>
+
+                </div>
+
+
+                <div id="instagramContent"></div>
+
+            </div>
+
+
+
+            <!-- DOWNLOAD -->
+
+            <div class="download-container">
+
+                <button id="downloadBtn">
+
+                    📥 Download Word Document
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer>
+
+        <p>
+            Built with ❤️ using Python, Flask & Gemini AI
+        </p>
+
+        <span>
+            AI Content Repurposer • 2026
+        </span>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
