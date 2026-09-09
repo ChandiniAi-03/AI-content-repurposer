@@ -1,74 +1,89 @@
 # 🤖 AI Content Repurposer
 
-An AI-powered web application that transforms a single article into ready-to-use social media content for **Twitter/X, LinkedIn, and Instagram**.
+> Transform one article into ready-to-use social media content with AI.
 
-The application extracts the content from an article URL, processes it using **Gemini AI**, and generates platform-specific content that can be copied instantly or downloaded as a Word document.
+**AI Content Repurposer** is a full-stack AI-powered web application that takes an article URL, extracts its content, and automatically generates platform-specific content for **Twitter/X, LinkedIn, and Instagram**.
+
+Users can instantly copy the generated content or download all outputs as a Word document.
+
+---
+
+## ✨ Project Preview
+
+![AI Content Repurposer](screenshots/01-home.png)
 
 ---
 
 ## 🚀 Features
 
-- 🔗 Extract article content from a URL
-- 🕷️ Web scraping using Python
-- 🤖 AI-powered content generation using Google Gemini
-- 𝕏 Generate Twitter/X threads
-- 💼 Generate LinkedIn posts
-- 📸 Generate Instagram captions
-- 📋 One-click copy buttons
-- 📄 Download generated content as a Word document
-- ✨ Responsive premium UI
-- 🌌 Modern Midnight Aurora Glass design
-- 🔐 API key protected using environment variables
+- 🔗 **Article URL Input** — Enter the URL of an accessible article.
+- 🕷️ **Article Extraction** — Extract the main article content using Python.
+- 🤖 **Gemini AI Generation** — Convert the extracted article into social-media content.
+- 𝕏 **Twitter/X Thread** — Generate a concise 5-post thread.
+- 💼 **LinkedIn Post** — Generate professional, engaging content.
+- 📸 **Instagram Caption** — Generate an engaging caption with hashtags.
+- 📋 **One-Click Copy** — Copy individual generated outputs instantly.
+- 📄 **Word Export** — Download all generated content as a `.docx` document.
+- 🌌 **Modern UI** — Responsive Midnight Aurora Glass interface.
+- 🔐 **Secure API Key Handling** — API credentials are stored using environment variables.
 
 ---
 
-## 🛠️ Technologies Used
+## 📸 Screenshots
 
-### Frontend
-- HTML5
-- CSS3
-- JavaScript
+### 🏠 Home Page
 
-### Backend
-- Python
-- Flask
-- Flask-CORS
+The landing interface allows users to enter an article URL and start the repurposing process.
 
-### AI
-- Google Gemini API
-- `google-genai`
-
-### Web Scraping
-- Requests
-- Trafilatura
-
-### Document Generation
-- Python-docx
-
-### Development Tools
-- VS Code
-- Git
-- GitHub
+![Home Page](screenshots/01-home.png)
 
 ---
 
-## ⚙️ How It Works
+### ✨ Features & Workflow
+
+The application presents its key capabilities and explains the simple three-step workflow.
+
+![Features and Workflow](screenshots/02-features.png)
+
+---
+
+### 🤖 AI Processing
+
+After submitting an article, the application extracts the content and sends it to Gemini AI for processing.
+
+![AI Processing](screenshots/03-ai-processing.png)
+
+---
+
+### 📱 Generated Content
+
+The application displays separate outputs for Twitter/X, LinkedIn, and Instagram, with options to copy or download the results.
+
+![Generated Social Media Content](screenshots/04-generated-content.png)
+
+---
+
+## 🔄 How It Works
 
 ```text
-Article URL
-     ↓
-Web Scraping
-     ↓
-Article Content Extraction
-     ↓
-Gemini AI Processing
-     ↓
- ┌───────────────┬───────────────┬────────────────┐
- ↓               ↓               ↓
-Twitter/X      LinkedIn       Instagram
- Thread          Post           Caption
- └───────────────┴───────────────┴────────────────┘
-                     ↓
-             Copy / Download
-                     ↓
-              Word Document
+        Article URL
+             │
+             ▼
+     Python Web Scraping
+             │
+             ▼
+    Article Content Extracted
+             │
+             ▼
+        Gemini AI
+             │
+      ┌──────┼──────┐
+      ▼      ▼      ▼
+   Twitter  LinkedIn  Instagram
+      │      │      │
+      └──────┼──────┘
+             ▼
+       Copy / Download
+             │
+             ▼
+       Word Document
