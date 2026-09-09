@@ -2,6 +2,8 @@
 // ELEMENTS
 // ==========================================
 
+const API_BASE_URL = "https://ai-content-repurposer-j5fl.onrender.com";
+
 const scrapeBtn =
     document.getElementById("scrapeBtn");
 
@@ -87,7 +89,7 @@ scrapeBtn.addEventListener(
 
             const scrapeResponse =
                 await fetch(
-                    "http://127.0.0.1:5000/api/scrape",
+                    `${API_BASE_URL}/api/scrape`,
                     {
                         method: "POST",
 
@@ -148,7 +150,7 @@ scrapeBtn.addEventListener(
 
             const aiResponse =
                 await fetch(
-                    "http://127.0.0.1:5000/api/generate",
+                    '${API_BASE_URL}/api/generate',
                     {
                         method: "POST",
 
@@ -303,7 +305,7 @@ downloadBtn.addEventListener(
 
             const response =
                 await fetch(
-                    "http://127.0.0.1:5000/api/download",
+                    `${API_BASE_URL}/api/generate`,
                     {
                         method: "POST",
 
