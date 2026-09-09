@@ -150,7 +150,7 @@ scrapeBtn.addEventListener(
 
             const aiResponse =
                 await fetch(
-                    '${API_BASE_URL}/api/generate',
+                    `${API_BASE_URL}/api/generate`,
                     {
                         method: "POST",
 
@@ -305,7 +305,7 @@ downloadBtn.addEventListener(
 
             const response =
                 await fetch(
-                    `${API_BASE_URL}/api/generate`,
+                    `${API_BASE_URL}/api/download`,
                     {
                         method: "POST",
 
